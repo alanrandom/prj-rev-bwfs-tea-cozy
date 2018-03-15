@@ -1,0 +1,139 @@
+* {
+    background-color: black;
+    font-family: Helvetica;
+    color: seashell;
+}
+
+p, h4 {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+h2, h3 {
+    font-size: 30px;
+}
+
+/* h2 and h4 are confusing to me. Their sizes are not correct for the spacing 
+ * in the menu section. By this I mean that the words "what's steeping at the 
+ * Tea Cozy" does size up correctly compared to the image below it. */
+
+/* header */
+header {
+    display: flex;
+    border-bottom: 1px solid seashell;
+    height: 69px;
+    width: 100%;
+    position: fixed;
+    justify-content: space-between;
+    text-align: left;
+    flex-direction: row;
+    background-color: black;
+    z-index: 1;
+}
+
+.logo img {
+    height: 50px;
+    margin: 10px;
+    width: auto;
+}
+
+nav span {
+    text-decoration: underline;
+    display: inline-block;
+    padding: 20px 10px;
+}
+
+/*background stuff */
+
+.main {
+    padding-top: 69px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.background {
+    height: 700px;
+    width: 1200px;
+    background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
+}
+
+#text {
+    display: block;
+    width: 1200px;
+    margin-top: 300px;   /*value is hard coded in right now. */
+    opacity: 0.9;
+}
+
+/*menu section */
+.monthly {
+    margin-top: 40px;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.menuItem {
+    height: 250px;
+    width: 300px;
+    margin: 10px 25px;
+}
+
+.menuItem img {
+    width: 100%;
+    height: auto;
+}
+
+
+/*locations */
+
+/*I am unsure how to make this image the right height when scaled */
+
+.locations {
+    height: 500px;
+    background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg");
+    background-repeat: no-repeat;
+    background-size: 1200px 500px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+#locationTitle {
+    opacity: 1;
+    margin-top: 50px;
+    width: 300px;
+    background-color: transparent;
+    margin: 50px 0px 0px 460px;
+}
+
+.blocks {
+    display: flex;
+    flex-direction: row;    
+    justify-content: center;
+    background-color: transparent;
+}
+
+.locationDetails {
+    height: 250px;
+    width: 300px;
+    opacity: 1; 
+    margin: 15px 20px 0px 20px;
+}
+
+
+
+/* footer */
+footer {
+    text-align: center;
+    height: 200px;
+}
+
+#copyright {
+    margin: 0px 0px 0px 20px;
+}
